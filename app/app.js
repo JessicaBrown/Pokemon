@@ -13,6 +13,7 @@ var app = angular.module('pokemon', ['ngRoute']);
                         templateUrl: 'Templates/dirPoke.html',
                         controller: 'pokeCtrl',
                 //DONT GENERALLY USE THE SAME CONTROLLER
+                //in order to keep clean and easier to read
                   })
                   .otherwise({
                         redirectTo: '/home'
