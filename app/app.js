@@ -6,11 +6,11 @@ var app = angular.module('pokemon', ['ngRoute']);
             //this will controll what goes into ng-view on html page
             //you are putting whatever is called on templateUrl into ng-view
                   .when('/home', {
-                        templateUrl: 'app/poke.html',
+                        templateUrl: 'Templates/poke.html',
                         controller: 'pokeCtrl',
                   })
                     .when('/dirPoke/:id', {
-                        templateUrl: 'app/dirPoke.html',
+                        templateUrl: 'Templates/dirPoke.html',
                         controller: 'pokeCtrl',
                 //DONT GENERALLY USE THE SAME CONTROLLER
                   })
