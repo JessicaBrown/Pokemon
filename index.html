@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokemon">
+    <head>
+        <meta charset="UTF-8">
+        <!--Link Css-->
+        <link rel="stylesheet" href="style.css">
+        <title>Pokemon</title>
+    </head>
+       <!-- do not need ng-controller as it is called in the route in the app file
+       <body ng-controller="pokeCtrl">-->
+       <body>
+      
+          <h1>PokeDex</h1>
+          <!-- remove this info or it will be static on all pages
+          <div ng-repeat="user in pokeChar">
+           Pokemon: {{user.name | uppercase}} 
+          </div> -->
+       
+
+          <!--Routing-->
+          <ng-view></ng-view>
+
+   
+   
+        <!--Link Angular Library-->
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js'></script>
+        <!--Link Angular Route-->
+        <script src='https://code.angularjs.org/1.4.3/angular-route.js'></script>
+        <!--Link Angular App-->
+        <script src='app/app.js'></script>
+        <!--Link Angular Controller-->
+        <script src='app/pokeCtrl.js'></script>
+        <!--if we used this as a second controller
+        <script src='app/dirPoke.js'></script>  -->
+
+        <!--Link Angular Service-->
+        <script src='app/pokeService.js'></script>
+
+    
+      </body>
+</html>
